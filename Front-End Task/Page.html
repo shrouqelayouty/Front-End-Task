@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Dzit</title>
+    <link rel="shortcut icon" type="image/x-icon" href="Images/logo.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="Page.css">
+    <script src="page.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="d-flex justify-content-between">
+        <div>
+          <img src="Images/168190960512482.png" class="logo" />
+        </div>
+
+        <div class="backgroundColorOfHamburgerIcons">
+          <div id="mySidenav" class="sideNav">
+            <div class="d-flex justify-content-between">
+              <img src="Images/168190960512482.png" class="logoInSideNav" />
+              <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            </div>
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 mt-5">
+                <a style="text-align: end" class="contactData textStyle">
+                  <b>: بيانات التواصل</b>
+                </a>
+                <br />
+                <a style="text-align: end" class="textStyle" href="#">
+                  <b class="colorHover">: اتصل علي</b>
+                </a>
+                <a style="text-align: end" class="textStyle" href="#">
+                  <b class="colorHover">: البريد الالكتروني</b>
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+                <a style="text-align: end" class="textStyle" href="#">
+                  <b class="colorHover">الرئيسيه</b>
+                </a>
+                <a style="text-align: end" class="textStyle" href="#">
+                  <b class="colorHover">من نحن </b>
+                </a>
+                <a style="text-align: end" class="textStyle" href="#">
+                  <b class="colorHover">تتبع الطلب</b>
+                </a>
+                <a style="text-align: end" class="textStyle" href="#">
+                  <b class="colorHover">ارسال هديه</b>
+                </a>
+                <a style="text-align: end" class="textStyle" href="#">
+                  <b class="colorHover">سياسه الخصوصيه</b>
+                </a>
+                <a style="text-align: end" class="textStyle" href="#">
+                  <b class="colorHover">تواصل معانا </b>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <span class="openBtn" onclick="openNav()">&#9776;
+          </span>
+        </div>
+      </div>
+      <div class="mt-4 text-center">
+        <b style="font-family: system-ui; font-size: x-large; color: #c01c7a">مجموعه ايطارات تناسب ذوقك</b>
+      </div>
+      <div class="row offset-3 mt-5">
+        <div class="groupOfPics" onpointerover="changeStyleOfImage()">
+          <div class="images">
+            <img src="Images/people.PNG" style="width: 100px; height: 100px" />
+          </div>
+          <p class="paragraphStyle">بدون أطراف</p>
+        </div>
+
+        <div class="groupOfPics" onpointerover="changeStyleOfImage()">
+          <div class="images">
+            <img src="Images/people.PNG" style="width: 100px; height: 100px" />
+          </div>
+          <p class="paragraphStyle">أبيض ضيق</p>
+        </div>
+
+        <div class="groupOfPics" onpointerover="changeStyleOfImage()">
+          <div class="images">
+            <img src="Images/people.PNG" style="width: 100px; height: 100px" />
+          </div>
+          <p class="paragraphStyle">أبيض واسع</p>
+        </div>
+
+        <div class="groupOfPics" onpointerover="changeStyleOfImage()">
+          <div class="images">
+            <img src="Images/people.PNG" style="width: 100px; height: 100px; border: solid 3px black" />
+          </div>
+          <p class="paragraphStyle">أسود ضيق</p>
+        </div>
+        <div class="groupOfPics" onpointerover="changeStyleOfImage()">
+          <div class="images">
+            <img src="Images/people.PNG" style="width: 100px; height: 100px; border: solid 5px black" />
+          </div>
+          <p class="paragraphStyle">أسود واسع</p>
+        </div>
+      </div>
+      <div class="mt-4 text-center">
+        <i id="plusIcon" class="fa fa-plus"></i>
+      </div>
+      <div class="mt-4 text-center">
+        <b id="middleText">اختار صوره محددة</b>
+      </div>
+
+      <div id="formDiv" class="mt-4 row">
+        <div class="tooltip">
+          <i class='questionCircle fa fa-question-circle-o m-1'>
+            <span id="tooltipText">لدينا فريق نسائي يتعامل مع طلبك من الاستلام حتي التغليف المحكم</span>
+          </i>
+        </div>
+        <div id="checkBoxOption" class="row">
+          <label for="check2" id="labelText">خدمة طباعه خاصة</label>
+          <input type="checkbox" id="checkBox">
+        </div>
+      </div>
+      <div class="mt-4 text-center">
+        <button class="disabledBtn" disabled>
+          <p id="disabledBtnText">تأكيد</p>
+        </button>
+      </div>
+  </body>
+</html>
